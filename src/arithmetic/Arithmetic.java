@@ -23,13 +23,43 @@ public class Arithmetic
      */
     public static void main(String[] args) 
     {
-       
-        ArithmeticBase r= new ArithmeticBase();
-        Scanner in= new Scanner(System.in);
-        int n= in.nextInt();
-        int m= in.nextInt();
-        double result = r.calculate(m,n);
-        System.out.println("result :" +result); 
+     Scanner input = new Scanner(System.in);
+    System.out.println("Enter x: ");
+    double x = input.nextDouble();
+    
+    System.out.println("Enter y: ");
+    double y = input.nextDouble();
+    
+    System.out.println("Select the operation to be performed");
+    System.out.println("1 Plus");
+    System.out.println(" 2 Minus");
+     System.out.println("3 Times");
+    System.out.println("4 Divide");
+    int operation = input.nextInt();
+    
+    
+    switch(operation)
+    {
+        case 1: 
+            System.out.println(x + y);
+            break;
+          
+        case 2:
+            System.out.println(x - y);
+            break;
+            
+        case 3:
+            System.out.println(x * y);
+            break;
+            
+        case 4: 
+            System.out.println(x / y);
+            
+            
+    }
+
+      
+    
     
     }
 }
